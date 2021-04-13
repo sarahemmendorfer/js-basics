@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <script type="text/javascript">
+    var productPrice = 0;
+    var productCode = prompt("What is the product code?");
+    var productQuantity = prompt("How much do you want?"); 
+    switch(productCode){
+        case "100":
+            productPrice = productQuantity * 1.20;
+            document.write(productQuantity+' Hot Dogs, final price: R$ '+productPrice.toFixed(2));
+            break;
+        case "101":
+            productPrice = productQuantity * 1.30;
+            document.write(productQuantity+' Simple Baurus, final price: R$ '+productPrice.toFixed(2));
+            break;
+        case "102":
+            productPrice = productQuantity * 1.50;
+            document.write(productQuantity+' Baurus with egg, final price: R$ '+productPrice.toFixed(2));
+            break;
+        case "103":
+            productPrice = productQuantity * 1.20;
+            document.write(productQuantity+' 10510amburgers, final price: R$ '+productPrice.toFixed(2));
+            break;
+        case "104":
+            productPrice = productQuantity * 1.30;
+            document.write(productQuantity+' Cheeseburgers, final price: R$ '+productPrice.toFixed(2));
+            break;
+        case "105":
+            productPrice = productQuantity * 1.00;
+            document.write(productQuantity+' Sodas, final price: R$ '+productPrice.toFixed(2));
+            break;
+    
+        default:
+            document.write('Inavalid code. Enter another value.')
+            break;
+    }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
