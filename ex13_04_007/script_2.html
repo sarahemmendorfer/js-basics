@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <script type="text/javascript">
+    var currentSalary = 1000.58, workPlan = "B", newSalary = 0;
+
+    switch(workPlan){
+        case "A":
+            newSalary = currentSalary * 0.10;
+            document.write('The new salary is R$: '+(newSalary+currentSalary).toFixed(2));
+            break;
+        case "B":
+            newSalary = currentSalary * 0.15;
+            document.write('The new salary is R$: '+(newSalary+currentSalary).toFixed(2));
+            break;
+        case "C":
+            newSalary = currentSalary * 0.20;
+            document.write('The new salary is R$: '+(newSalary+currentSalary).toFixed(2));
+            break;
+        default:
+            document.write('Invalid work plan, write again!');
+    }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
