@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <script type="text/javascript">
+    var inicialDebt = 100.8, lateMonths = 3, interest = 0;
+    switch(lateMonths){
+        case 1:
+            interest = inicialDebt * 0.01;
+            document.write('Total interest: R$'+interest.toFixed(2));
+            break;
+        case 2:
+            interest = inicialDebt * 0.02;
+            document.write('Total interest: R$'+interest.toFixed(2));
+            break;
+        case 3:
+            interest = inicialDebt * 0.03;
+            document.write('Total interest: R$'+interest.toFixed(2));
+            break;
+        case 4:
+            interest = inicialDebt * 0.04;
+            document.write('Total interest: R$'+interest.toFixed(2));
+            break;
+        case 5:
+            interest = inicialDebt * 0.05;
+            document.write('Total interest: R$'+interest.toFixed(2));
+            break;
+        default:
+            document.write("Write a new value! (0 - 5)")
+        ;
+    }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
