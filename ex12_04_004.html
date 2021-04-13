@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <script>
+        /*A school is in need of creating a system that displays the status of students in relation to passing. Create a script with the following criteria:
+        1. students have 3 scores;
+        2. You must make the media between the three notes;
+        3. If media greater than or equal to 7. Displays "approved" screen;
+        4. If media under than 7. Displays "retake test" screen;
+        5. If it less than 4, "disapproved";*/
+        var studentsScore = [[2, 4, 0], [6.9, 6.7, 6.5], [7, 7, 7]];
+        var studentsName = ["Maria", "José", "João"];
+        var mediaScore = 0;
+        var i = 0;       
+        //Do this process for 3 students and fit each one in the situations  
+        while(i<3){
+            mediaScore = (studentsScore[i][0] + studentsScore[i][1] + studentsScore[i][2]) / 3;
+            if(mediaScore >= 7){
+                document.write('Score: '+mediaScore+ '<br/>');
+                document.write('The student named ' +studentsName[i]+ ' is approved!'+ '<br/>');
+                i++;
+            }
+            else if(mediaScore < 7 && mediaScore>=4){
+                document.write('Score: '+mediaScore+ '<br/>');
+                document.write('The student named ' +studentsName[i]+ ' have to retake test!'+ '<br/>');
+                i++;
+            }
+            else {
+                document.write('Score: '+mediaScore+ '<br/>');
+                document.write('The student named ' +studentsName[i]+ ' is disapproved!'+ '<br/>');
+                i++;
+            }
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

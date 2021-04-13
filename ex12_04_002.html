@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <script>
+       var myAge = 23;
+       var sonAge = 0;
+       var fatherAge = 43;
+       var lineBreak = '<br/>'
+       var sumAges = 0;
+       var brothersAge = 0;
+       var familyIncome = 0;
+       //1. Display on the screen the sum of your age and your child's sum; // who has no sum with 0.
+       document.write('My age plus that my son is: ' + (sumAges = myAge+=sonAge));
+       document.write(lineBreak);
+       //2. The result, the sum of the previous item, multiplies with your father's age;
+       document.write("Sum of ages multiplied by my father's age: " + (sumAges*fatherAge));
+       document.write(lineBreak);
+       //3. Now some of your brothers' age, multiply with your age and share with the result of item 01;
+       document.write("Sum of the siblings' age, multiplied with my age and divided with the sum of the ages: " + (brothersAge = ((26+14)*23)/sumAges));
+       document.write(lineBreak);
+       //4. Now, divide family income by the number of people who make up your family and the result multiplied by 30;
+       document.write('family income divided by the number of family members, multiplied by 30: ' + (familyIncome=5000/4*30)); 
+       document.write(lineBreak);   
+       document.write('1. = '+sumAges+' // 2. = '+(sumAges*fatherAge)+' // 3. = '+brothersAge +' // 4. = '+familyIncome);
+       
+       
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
