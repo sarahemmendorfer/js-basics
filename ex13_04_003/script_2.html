@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <script>
+        var weight = 70, height = 1.70, bodyMass = 0;
+        bodyMass = weight / (height^2);
+        document.write('BMI: '+bodyMass+'<br/>');
+        if(bodyMass <= 18.5){
+            document.write('Under weight'); 
+        }else if(bodyMass > 18.5 && bodyMass < 25){
+            document.write('Normal weight'); 
+        }else if(bodyMass >= 25 && bodyMass <= 30){
+            document.write('Overweight'); 
+        }
+        else{
+            document.write('Obese'); 
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
