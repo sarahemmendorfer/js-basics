@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <script>
+        function myDivision(number1, number2){
+            if(isNaN(number1) || isNaN(number2)){
+                return "Error! Enter a new number!";}
+            var largestNumber = Math.max(number1, number2);
+            var lowestNumber = Math.min(number1, number2);
+            if(lowestNumber == 0){
+                return "Error! Enter a new number!";
+            }else{
+                var division = Math.round(largestNumber/lowestNumber);
+                return `The result of the division is: ${division}!`;
+            }
+        }    
+        var typeNumber1 = parseFloat(prompt("Enter number 1: "));
+        var typeNumber2 = parseFloat(prompt("Enter number 2: "));
+        var myResult = myDivision(typeNumber1, typeNumber2);
+        document.write(myResult);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
