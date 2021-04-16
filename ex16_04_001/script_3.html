@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <script>
+        function myNumberRandom(number1, randomScale){
+            if(isNaN(number1) || (randomScale < 0)){
+                return "Error! Enter a new number!";
+            }
+            var randomNumber = (Math.random() * randomScale);
+            randomNumber = randomNumber.toFixed(4);
+            return `Number: ${number1} <br/>Random Number: ${randomNumber} <br/>Result: ${Math.abs(number1-randomNumber)}`;
+        }
+        var newNumber1 = parseFloat(prompt("Enter a number: "));
+        var newRandomScale = parseInt(prompt("Type a random scale: "));
+        var myResult = myNumberRandom(newNumber1, newRandomScale);
+        document.write(myResult);
+        </script>
+</head>
+<body>
+    
+</body>
+</html>
