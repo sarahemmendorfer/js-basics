@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <script>
+        function adulthood(yearOfBirth){
+            var myAge = (2021 - yearOfBirth);
+            if(myAge > 130 || myAge < 0){
+                return "Error! Enter a new number!";
+            }else{
+                if(myAge >= 18){
+                    return "Over 18 years old!";
+                }else{
+                    return "Under 18 years old!";
+                }
+            }
+        }
+        var myYear = parseInt(prompt("Enter number 1: "));
+        var myResult = adulthood(myYear);
+        document.write(myResult);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
