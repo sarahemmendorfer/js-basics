@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <script>
+        var angle = parseFloat(prompt("Enter an angle: "));
+        var myAngle = angle * (Math.PI/180); //transform to rad
+        var mySin = Math.sin(myAngle).toFixed(4);
+        var myCos = Math.cos(myAngle).toFixed(4);
+        var myTan =  Math.tan(myAngle).toFixed(4);
+        document.write(`My angle: ${angle}° <br/>Sine: ${mySin} <br/>Cosine: ${myCos} <br/>Tangent: ${myTan}`);
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
