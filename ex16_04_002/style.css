@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(125, 158, 189);
+}
+
+h1{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 20px;
+    text-transform: uppercase;
+    color: rgb(41, 40, 40);
+    text-shadow: 1px 1px 2px  rgba(41, 40, 40, 0.479);
+}
+
+input{
+    width: 600px;
+    height: 100px;
+    display: block;
+    margin: 20px auto;
+    border: 3px solid;
+    border-color: palevioletred;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgba(87, 45, 59, 0.651);
+    background-color: rgba(255, 255, 255, 0.575);
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(41, 40, 40);
+}
