@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-color: rgba(59, 59, 59, 0.452)
+        }
+
+        input{
+            width: 200px;
+            height: 100px;
+            margin: 20px;
+        }
+    </style>
+    <script>
+        function green1(){
+            document.getElementById("in_1").style.backgroundColor = "green";
+        }
+
+        function green2(){
+            document.getElementById("in_2").style.backgroundColor = "green";
+        }
+
+
+        function green3(){
+            document.getElementById("in_3").style.backgroundColor = "green";
+        }
+
+
+        function red1(){
+            document.getElementById("in_1").style.backgroundColor = "red";
+        }
+
+        function red2(){
+            document.getElementById("in_2").style.backgroundColor = "red";
+        }
+
+        function red3(){
+            document.getElementById("in_3").style.backgroundColor = "red";
+        }
+    </script>
+</head>
+<body>
+    <form action="">
+        <input id = "in_1" type="text" onclick="green1()" onmouseout="red1()"> 
+        <input id = "in_2" type="text" onclick="green2()" onmouseout="red2()">
+        <input id = "in_3" type="text" onclick="green3()" onmouseout="red3()">
+    </form>
+</body>
+</html>
