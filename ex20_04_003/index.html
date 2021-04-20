@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <script>
+        var myArray = new Array(20);
+        for(var count = 0; count < 20; count++){
+            myArray[count] = count  * 5;
+        }
+        document.write(`Old Array = [${myArray}] <br/>`);
+        var myKey = 0;
+        function dobra(){
+            var newArray = new Array(20);
+            for(keys in myArray){
+                newArray[keys] =  (myArray[keys] * 2);
+        }
+        return document.write(`New Array = [${newArray}]`);
+        }
+        dobra();
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
