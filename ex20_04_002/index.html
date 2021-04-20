@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <script>
+        var arraySize = parseInt(prompt('Number of students in the class:'));
+        var students = new Array(arraySize);
+        for(var count = 0; count < arraySize; count++){
+            students[count] = parseFloat(prompt(`Note from student number ${count+1}: `));
+        }
+        var mySum = 0;
+        for(key in students){
+            mySum = mySum + students[key];
+        }
+
+        var mean = 0;
+        mean = (mySum/arraySize).toFixed(1);
+
+        document.write(`The mean was: ${mean}`);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
