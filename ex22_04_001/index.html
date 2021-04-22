@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <script>
+        var myArray = new Array('A', 'b', 'B', 'C', 'c', 1, 2, 3);
+        document.write (`Array 1: [${myArray}]; <br/>`);
+
+        myArray.unshift('a');
+        document.write (`Array 2: [${myArray}]; <br/>`);
+
+        myArray.push(4);
+        document.write (`Array 3: [${myArray}]; <br/>`);
+
+        for(var i=5; i < myArray.length-1; i++){
+            myArray[i] = myArray[i + 1];
+        }
+        myArray.pop();
+        document.write (`Array 4: [${myArray}]; <br/>`);
+
+        myArray.shift();
+        document.write (`Array 5: [${myArray}]; <br/>`);
+
+        myArray.pop();
+        document.write (`Array 6: [${myArray}];`);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
