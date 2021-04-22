@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+   background-color: #4b4741; 
+}
+
+h1{
+    text-transform: uppercase;
+    color: #6aebe4;
+    text-shadow: 1px 1px 2px black;
+    font-size: 60px;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+    font-family: sans-serif
+}
+
+#general{
+    margin: 0 auto;
+    width: 400px;    
+}
+
+#button{
+    width: 400px;
+    height: 100px;
+    display: block;
+    background-color: #e6d17c;
+    box-shadow: 1px 1px 10px;
+    border-radius: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: rgb(19, 18, 18);
+    text-shadow: 1px 1px 3px;
+    position: absolute;
+    bottom: 66%;
+    visibility: visible;
+}
+
+#div1{
+    width: 400px;
+    height: 150px;
+    background-color: rgb(236, 182, 218);
+    border-radius: 10px;
+    border: 2px solid;
+    box-shadow: 1px 1px 6px black;
+    position: absolute;
+    bottom: 62%;
+    visibility: hidden;
+}
+
+#div2{
+    width: 400px;
+    height: 150px;
+    background-color: rgb(55, 197, 166);
+    border-radius: 10px;
+    border: 2px solid;
+    box-shadow: 1px 1px 6px black;
+    position: absolute;
+    bottom: 62%;
+    visibility: hidden;
+}
+
+#div3{
+    width: 400px;
+    height: 150px;
+    background-color: rgb(179, 114, 233);
+    border-radius: 10px;
+    border: 2px solid;
+    box-shadow: 1px 1px 6px black;
+    position: absolute;
+    bottom: 62%;
+    visibility: hidden;
+}
+
+label{
+    display: block;
+    margin: 20px 30px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+#numberM, #numberN{
+    width: 250px;
+    height: 30px;
+    margin: 0 0 0 30px;
+}
+
+#button1, #button2{
+    width: 80px;
+    height: 30px;
+    margin-right: 30px;
+    background-color: rgb(146, 140, 140);
+    font-weight: bold;
+    font-size: 17px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.568);
+}
+
+p{
+    padding: 8px 10px;
+    font-family: sans-serif;
+}
